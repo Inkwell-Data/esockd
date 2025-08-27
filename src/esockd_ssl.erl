@@ -120,6 +120,7 @@ format_rdn(#'AttributeTypeAndValue'{type = T, value = V}) ->
             {?'id-at-pseudonym'              , "PSEUDONYM"},
             {?'id-domainComponent'           , "DC"},
             {?'id-emailAddress'              , "EMAILADDRESS"},
+            {17                              , "STREET"}, %% macro was removed in OTP28
             % {?'street-address'               , "STREET"}, %% Not in public_key.hrl
             {{0,9,2342,19200300,100,1,1}     , "UID"}], %% Not in public_key.hrl
     case proplists:lookup(T, Fmts) of
